@@ -4,7 +4,7 @@ version=3.0.1
 prefix=all
 threads=8
 outdir=$(pwd)
-DBpath=$(echo $PATH | sed 's/:/\n/g' | grep "HiFiAdapterFilt/DB" | head -n 1)
+DBpath="$(dirname $(which hifiadapterfilt.sh))/DB"
 adapterlength=44
 pctmatch=97
 
